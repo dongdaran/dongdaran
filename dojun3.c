@@ -1,3 +1,34 @@
+=>ë‚´ê°€ ì§ ê²ƒ
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main() {
+	int num_count, num;
+	num_count = 1;
+	num = 2;
+
+	printf("%d ", num);
+
+	while (num_count < 10) {
+		num++;
+		for (int i = 2; i < num; i++) {
+			if (num % i == 0) {
+				break;
+			}
+
+			printf("%d ", num);
+			num_count ++ ;
+			break;
+
+
+		}
+		
+	}
+
+	return 0;
+}
+
+=>ì§€í”¼í‹°
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
@@ -7,11 +38,11 @@ int main() {
 
     while (num_count < 10) {
         num++;
-        int is_prime = 1; // °¡Á¤: numÀº ¼Ò¼ö¶ó°í °¡Á¤
+        int is_prime = 1; // ê°€ì •: numì€ ì†Œìˆ˜ë¼ê³  ê°€ì •
 
         for (int i = 2; i < num; i++) {
             if (num % i == 0) {
-                is_prime = 0; // numÀÌ ¼Ò¼ö°¡ ¾Æ´Ô
+                is_prime = 0; // numì´ ì†Œìˆ˜ê°€ ì•„ë‹˜
                 break;
             }
         }
